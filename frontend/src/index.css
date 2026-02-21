@@ -1,0 +1,150 @@
+/* ---------- Global ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f4f8;
+  color: #333;
+}
+
+/* ---------- App Container ---------- */
+.app-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.app-container h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* ---------- Tabs ---------- */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.tabs button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 999px;
+  background: #e6e8ec;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabs button:hover {
+  background: #d5d8dd;
+}
+
+.tabs button.active {
+  background: #2f3a4a;
+  color: #ffffff;
+}
+
+/* ---------- Table ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+table thead {
+  background: #f6f7f9;
+}
+
+table th {
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+table td {
+  padding: 14px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+table tr:hover {
+  background: #fafafa;
+}
+
+/* ---------- Empty State ---------- */
+.empty-text {
+  text-align: center;
+  color: #777;
+  margin: 20px 0;
+}
+
+/* ---------- Form Card ---------- */
+.form-card {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #f9fafb;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.form-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-card input:focus {
+  outline: none;
+  border-color: #2f3a4a;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #2f3a4a;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-card button:hover:not(:disabled) {
+  background: #1f2937;
+}
+
+.form-card button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* ---------- Error ---------- */
+.error-text {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
